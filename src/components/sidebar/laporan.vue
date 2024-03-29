@@ -1,4 +1,4 @@
 <template>
     <base-sidebar></base-sidebar>
-    <h1>Dashboard</h1>
+    <h1>Laporan</h1>
 </template>

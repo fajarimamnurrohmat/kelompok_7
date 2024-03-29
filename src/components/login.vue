@@ -8,7 +8,7 @@
       <div class="col d-flex align-items-center justify-content-center">
         <div class="form-container">
           <div class="mb-5 mt-2" style="text-align: left;">
-            <H4>Log In</H4>
+            <h4>Log In</h4>
           </div>
           <form style="text-align: left;">
           <div class="mb-4">

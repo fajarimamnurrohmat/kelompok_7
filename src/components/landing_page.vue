@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col">
         <router-link to="/login">
-          <div class="card">
+          <div class="card" style="height: 200px;">
             <div class="card-body">
               <div class="kasir p-3">
                 <i class="fas fa-cash-register fa-3x mb-2"></i>
@@ -22,7 +22,7 @@
       </div>
       <div class="col">
         <router-link to="/login">
-          <div class="card">
+          <div class="card" style="height: 200px;">
             <div class="card-body">
               <div class="administrator p-3">
                 <i class="fas fa-user-cog fa-3x mb-2"></i>

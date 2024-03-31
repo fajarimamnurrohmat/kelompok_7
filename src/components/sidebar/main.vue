@@ -5,16 +5,16 @@
     <nav id="sidebarMenu" :class="{ 'show': sidebarOpen }" class="collapse d-lg-block sidebar collapse bg-white">
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-5">
-          <router-link to="/dashboard" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link to="/mainsidebar/dashboard" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
             <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
           </router-link>
-          <router-link to="/penjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link to="/mainsidebar/penjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
             <i class="fas fa-money-bill fa-fw me-3"></i><span>Penjualan</span>
           </router-link>
-          <router-link to="/riwayatpenjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link to="/mainsidebar/riwayatpenjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
             <i class="fas fa-chart-line fa-fw me-3"></i><span>Riwayat Penjualan</span>
           </router-link>
-          <router-link to="/laporan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link to="/mainsidebar/laporan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
             <i class="fas fa-chart-bar fa-fw me-3"></i><span>Laporan</span>
           </router-link>
         </div>
@@ -59,7 +59,7 @@
   <!--Main layout-->
   <main :style="{ marginTop: sidebarOpen ? '58px' : '0' }">
     <div class="container pt-4">
-      <router-view name="menu"></router-view>
+      <router-view></router-view>
     </div>
   </main>
   <!--Main layout-->
@@ -78,7 +78,7 @@ export default {
     toggleSidebar() {
       this.sidebarOpen = !this.sidebarOpen;
     }
-  }
+  },
 };
 </script>
 

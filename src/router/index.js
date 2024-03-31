@@ -19,23 +19,25 @@ const routes = [
   {
     path: "/mainsidebar",
     component: MainSidebar,
+    children: [
+      {
+        path: "dashboard",
+        component: Dashboard
+      },
+      {
+        path: "penjualan",
+        component: Penjualan
+      },
+      {
+        path: "riwayatpenjualan",
+        component: RiwayatPenjualan
+      },
+      {
+        path: "laporan",
+        component: Laporan
+      }
+    ],
   },
-  {
-    path: "/dashboard",
-    component: Dashboard
-  },
-  {
-    path: "/penjualan",
-    component: Penjualan
-  },
-  {
-    path: "/riwayatpenjualan",
-    component: RiwayatPenjualan
-  },
-  {
-    path: "/laporan",
-    component: Laporan
-  }
 ];
 
 const router = createRouter({

@@ -1,4 +1,3 @@
 <template>
-    <base-sidebar></base-sidebar>
-    <h1>Dashboard</h1>
+    <h1>dashboard</h1>
 </template>

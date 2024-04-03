@@ -2,20 +2,50 @@
   <!--Main Navigation-->
   <header>
     <!-- Sidebar -->
-    <nav id="sidebarMenu" :class="{ 'show': sidebarOpen }" class="collapse d-lg-block sidebar collapse bg-white">
+    <nav
+      id="sidebarMenu"
+      :class="{ show: sidebarOpen }"
+      class="collapse d-lg-block sidebar collapse bg-white"
+    >
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-5">
-          <router-link to="/mainsidebar/dashboard" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
+          <router-link
+            to="/mainsidebar/dashboard"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
+            <i class="fas fa-tachometer-alt fa-fw me-3"></i
+            ><span>Dashboard</span>
           </router-link>
-          <router-link to="/mainsidebar/penjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link
+            to="/mainsidebar/penjualan"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
             <i class="fas fa-money-bill fa-fw me-3"></i><span>Penjualan</span>
           </router-link>
-          <router-link to="/mainsidebar/riwayatpenjualan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-            <i class="fas fa-chart-line fa-fw me-3"></i><span>Riwayat Penjualan</span>
+          <router-link
+            to="/mainsidebar/riwayatpenjualan"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
+            <i class="fas fa-chart-line fa-fw me-3"></i
+            ><span>Riwayat Penjualan</span>
           </router-link>
-          <router-link to="/mainsidebar/laporan" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+          <router-link
+            to="/mainsidebar/laporan"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
             <i class="fas fa-chart-bar fa-fw me-3"></i><span>Laporan</span>
+          </router-link>
+
+          <router-link
+            to="/mainsidebar/tambah"
+            class="list-group-item list-group-item-action py-2 ripple"
+            aria-current="true"
+          >
+            <i class="fas fa-chart-bar fa-fw me-3"></i><span>Tambah Barang</span>
           </router-link>
         </div>
       </div>
@@ -43,7 +73,7 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#">
           <img
-            src="C:\xampp\htdocs\Kasir_7\kasir_kelompok_7\src\assets\logo_kasir.png"
+            src="D:\kel7\kelompok_7\src\assets\logo_kasir.png"
             height="25"
             alt="MDB Logo"
             loading="lazy"
@@ -66,18 +96,18 @@
 </template>
 
 <script>
-import { RouterView } from 'vue-router';
+import { RouterView } from "vue-router";
 
 export default {
   data() {
     return {
-      sidebarOpen: true
+      sidebarOpen: true,
     };
   },
   methods: {
     toggleSidebar() {
       this.sidebarOpen = !this.sidebarOpen;
-    }
+    },
   },
 };
 </script>

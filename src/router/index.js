@@ -6,6 +6,7 @@ import Dashboard from "../components/sidebar/dashboard.vue";
 import Penjualan from "../components/sidebar/penjualan.vue";
 import RiwayatPenjualan from "../components/sidebar/riwayatPenjualan.vue";
 import Laporan from "../components/sidebar/laporan.vue"
+import addBarang from "../components/sidebar/tambah.vue" 
 
 const routes = [
   {
@@ -35,7 +36,12 @@ const routes = [
       {
         path: "laporan",
         component: Laporan
+      },
+      {
+        path: "tambah",
+        component: addBarang
       }
+
     ],
   },
 ];

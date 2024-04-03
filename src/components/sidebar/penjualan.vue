@@ -2,8 +2,8 @@
   <div class="border border-2 mb-4">
     <p class="text-start py-2 ms-5 fw-bold fs-5 my-auto">Penjualan</p>
   </div>
-  <div class="card border border-2">
-    <form class="d-none d-md-flex input-group">
+  <div class="container_all border border-2">
+    <form class="d-none d-md-flex input-group p-4">
       <input
         autocomplete="off"
         type="search"
@@ -87,7 +87,7 @@
 .border {
   height: 50px;
 }
-.card {
+.container_all {
   height: 500px;
 }
 </style>

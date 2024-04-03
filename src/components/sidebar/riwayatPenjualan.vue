@@ -2,8 +2,8 @@
   <div class="border border-2 mb-4">
     <p class="text-start py-2 ms-5 fw-bold fs-5 my-auto">Riwayat Penjualan</p>
   </div>
-  <div class="card border border-2">
-    <form class="d-none d-md-flex input-group">
+  <div class="container_all border border-2">
+    <form class="d-none d-md-flex input-group p-4">
       <table class="table table-striped mt-4">
         <thead>
           <tr>
@@ -21,7 +21,7 @@
             <td>Utangan bayar telat</td>
           </tr>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">2</th>
             <td>31-03-2024</td>
             <td>45.500</td>
             <td>Bayar lunas</td>
@@ -35,7 +35,7 @@
 .border {
   height: 50px;
 }
-.card {
+.container_all {
   height: 500px;
 }
 </style>

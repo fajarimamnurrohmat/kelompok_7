@@ -43,7 +43,7 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#">
           <img
-            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            src="C:\xampp\htdocs\Kasir_7\kasir_kelompok_7\src\assets\logo_kasir.png"
             height="25"
             alt="MDB Logo"
             loading="lazy"

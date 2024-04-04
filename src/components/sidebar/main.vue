@@ -73,7 +73,7 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#">
           <img
-            src="D:\kel7\kelompok_7\src\assets\logo_kasir.png"
+            src="../../assets/logo_kasir.png"
             height="25"
             alt="MDB Logo"
             loading="lazy"

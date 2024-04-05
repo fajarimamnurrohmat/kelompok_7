@@ -25,48 +25,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>shampo</td>
-            <td>5.000</td>
-            <td>2</td>
-            <td>10.000</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Roti</td>
-            <td>3000</td>
-            <td>3</td>
-            <td>9.000</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Garam</td>
-            <td>2.500</td>
-            <td>3</td>
-            <td>7.500</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Mie Instan</td>
-            <td>3.000</td>
-            <td>1</td>
-            <td>3.000</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Beras 5kg</td>
-            <td>76.000</td>
-            <td>1</td>
-            <td>76.000</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>IceCream</td>
-            <td>3.000</td>
-            <td>2</td>
-            <td>6.000</td>
-          </tr>
+          <tr v-for="barang in listBarang" :key="barang.id">
+          <td>{{ barang.id }}</td>
+          <td>{{ barang.nama_barang }}</td>
+          <td>{{ barang.harga }}</td>
+          <td>nantinya di isi jumlah inputan</td>
+          <td>nantinya buat sub total</td>
+        </tr>
         </tbody>
       </table>
       <div class="row">
@@ -83,6 +48,25 @@
     </form>
   </div>
 </template>
+<script>
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      listBarang: [],
+    };
+  },
+  async mounted() {
+    try {
+      const response = await axios.get("http://localhost:5000/barang");
+      this.listBarang = response.data.data.barang.rows;
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  },
+};
+</script>
 <style>
 .border {
   height: 50px;
